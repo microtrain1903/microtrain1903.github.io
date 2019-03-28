@@ -13,6 +13,7 @@
     <body>
         <header>
             <span class="logo">My WebSite</span>
+            <a id="toggleMenu">Menu<a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -20,6 +21,7 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
         </header>
         <main>
             <h1>Hello, I am Zyris Shakir</h1>
@@ -30,6 +32,20 @@
                 not cool enough. You'd have to beat me in a dance off first.
             </p>  
         </main>
- 
+        <script>
+
+                var toggleMenu = document.getElementById('toggleMenu');
+                var nav = document.querySelector('nav');
+                toggleMenu.addEventListener(
+                  'click',
+                  function(){
+                    if(nav.style.display=='block'){
+                      nav.style.display='none';
+                    }else{
+                      nav.style.display='block';
+                    }
+                  }
+                );
+        </script>
     </body>
 </html>
